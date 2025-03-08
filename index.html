@@ -1,157 +1,189 @@
-<!DOCTYPE HTML>
-<!-- 
-	Scrolled HTML5 Template
-	Version: 1.0
-	Author: Prasanjit Singh
-	Author URI: http://www.prasanjit.com/
-	License: Free for personal and commercial use [DO NOT REDISTRIBUTE]
- -->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Demo - Scrolled HTML5 Template [Prasanjit.com]</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css"> 
-	<link rel="stylesheet" type="text/css" href="css/responsive.css"> 
-    <script src="js/pace.js"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Training Institute</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?education,classroom') no-repeat center center/cover;
+            height: 500px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .testimonial-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .advertisement {
+            background: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background: #222;
+            color: white;
+            padding: 20px 0;
+        }
+        .hero {
+        background: url('https://source.unsplash.com/1600x900/?education,classroom') no-repeat center center/cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .hero-content {
+        background-color: rgba(0, 102, 255, 0.9); /* Blue background with transparency */
+        padding: 0px;
+        width: 1200px;
+        max-width: 80%;
+        text-align: center;
+        border-radius: 10px;
+    }
+    </style>
 </head>
 <body>
-	<div id="vid-overlay"></div>
-	<!-- Intro -->
-	<section id="intro">
-		<div id="intro-text">
-			<!-- To change text go to scripts.js -->
-			<h1>We are <span id="fill-text"></span></h1>
-			<div href="#about" id="scr-down">
-				<h2><span>about</span> [Company Name]</h2>
-				<a href="#about">
-					<img src="images/scr_down.png">
-				</a> 
-			</div>
-		</div>
-	</section>
-	<!-- About -->
-	<section id="about">
-		<article>
-			<h5>The Brief</h5>
-			<h1><span>Lorem ipsum dolor sit amet</span>, consectetur adipiscing elit. Sed a adipiscing dui. Suspendisse vulputate eros eu purus porta ultricies. <em>Mauris odio magna, suscipit in felis facilisis, sollicitudin convallis nibh. Etiam accumsan tellus quis dolor blandit tristique.</em></h1>
-			<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a adipiscing dui. Suspendisse vulputate eros eu purus porta ultricies. Mauris odio magna, suscipit in felis facilisis, sollicitudin convallis nibh.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a adipiscing dui. Suspendisse vulputate eros eu purus porta ultricies. Mauris odio magna, suscipit in felis facilisis, sollicitudin convallis nibh. </p>
-		</article>
-	</section>
-	<!-- Services -->
-	<section id="services">
-		<h2>Services <span>that we offer</span></h2>
-		<article>
-			<div id="php">
-				<img src="images/php-dev.png">
-				<h5>PHP</h5>
-			</div>
-			<div id="wp">
-				<img src="images/wp-dev.png">
-				<h5>Wordpress</h5>
-			</div>
-			<div id="ps">
-				<img src="images/psd-icn.png">
-				<h5>UX/UI Design</h5>
-			</div>
-			<div id="droid">
-				<img src="images/and-dev.png">
-				<h5>Android Development</h5>
-			</div>
-			<div id="ios">
-				<img src="images/ios-dev.png">
-				<h5>iOS Development</h5>
-			</div>
-			<div id="soc">
-				<img src="images/soc-media.png">
-				<h5>Social Media</h5>
-			</div>
-		</article>
-	</section>
-	<!-- Process -->
-	<section id="process">
-		<h2>The Process</h2>
-		<article>
-			<span id="ideate">
-				<img src="images/ideate.png">
-				<h5>Ideate</h5>
-			</span>
-			<span id="photoshop">
-				<img src="images/psd.png">
-				<h5>Photoshop</h5>
-			</span>
-			<span id="code">
-				<img src="images/code.png">
-				<h5>Code</h5>
-			</span>
-			<span id="optimize">
-				<img src="images/optimize.png">
-				<h5>Optimize</h5>
-			</span>
-			<h4>&hellip;or choose anyone of these.</h4>
-		</article>
-	</section>
-	<!-- Portfolio -->
-	<section id="portfolio">
-		<div id="color-bg"></div>
-		<h2>Portfolio</h2>
-		<ul class="port-style">
-			<div class="diamondswrap" id="port-items">
-				<div class="item" style="background-image: url(images/portfolio/1.jpg);"><span class="item-hover"><h4>Project 1</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/2.jpg);"><span class="item-hover"><h4>Project 2</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/3.jpg);"><span class="item-hover"><h4>Project 3</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/4.jpg);"><span class="item-hover"><h4>Project 4</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/5.jpg);"><span class="item-hover"><h4>Project 5</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/6.jpg);"><span class="item-hover"><h4>Project 6</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/7.jpg);"><span class="item-hover"><h4>Project 7</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/8.jpg);"><span class="item-hover"><h4>Project 8</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/9.jpg);"><span class="item-hover"><h4>Project 9</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/1.jpg);"><span class="item-hover"><h4>Project 10</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/2.jpg);"><span class="item-hover"><h4>Project 11</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/3.jpg);"><span class="item-hover"><h4>Project 12</h4><a href="#">Take a look</a></span></div>
-				<div class="item" style="background-image: url(images/portfolio/4.jpg);"><span class="item-hover"><h4>Project 13</h4><a href="#">Take a look</a></span></div>
-			</div>
-		</ul>
-	</section>
-	<!-- Contact -->
-	<section id="contact">
-		<article>
-	          	<div id="contact_form">
-	           	<h3>Let's start a project</h3>
-	           	<p>If you have a project in mind, you can use the below form to contact us.</p>
-	           	<hr>
-			  	<form id="cont-form" method="post">
-	              <input type="text" name="name" id="name" placeholder="Name"><span>*</span><br>
-	              <input type="text" spellcheck='false' name="email" id="email" placeholder="Email Address" ><span>*</span><br>
-	              <input type="text" name="phone"id="phone" placeholder="Phone Number"><span style="color:#fff">*</span><br>
-	              <textarea name="comments" placeholder="Tell us a little about your project"></textarea><span style="margin-top:12px;">*</span><br>
-	              <a id="send-btn" href="#">Send</a>
-	              <div class="clr"></div>
-			    </form>
-			</div>
-			<div id="address">
-				<p>or you can send an email or call us.</p>
-				<span>info@prasanjit.com</span>
-				<span>(+91) 9779999231</span>
-				<span>#22168, Phase iii, Bathinda.</span>
-	        </div>
-		</article>
-		<!-- To change map location edit scripts.js -->
-		<div id="map"></div>
-	</section>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/device.min.js"></script>
-	<script src="js/jquery.wordrotator.js"></script>
-	<script src="js/smooth-scroll.js"></script>
-  	<script src="js/TweenMax.min.js"></script>
-  	<script src="js/jquery.superscrollorama.js"></script>
-	<script src="js/jquery.diamonds.js"></script>
-	<script src="js/jquery.mb.YTPlayer.js"></script>
-	<script src="js/scripts.js"></script> <!-- Edit this -->
-	<!-- Put background video URL here  -->
-	<a class="player" data-property="{videoURL:'http://youtu.be/UDV5O4N4FE4',containment:'body',autoPlay:true, quality:'large',  mute:true, startAt:0,opacity:1}"></a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ABC Training</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#advertisements">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<div class="hero d-flex align-items-center justify-content-center">
+    <div class="hero-content text-center text-white p-5">
+        <h1>ABC Training Institute</h1>
+        <p>Your Path to Professional Excellence</p>
+    </div>
+</div>
+
+    <!-- About Us -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center">About Us</h2>
+        <p class="text-center">
+            ABC Training Institute is a leading provider of professional courses in IT, Cloud Computing, DevOps, and Full Stack Development. 
+            Our mission is to equip individuals with industry-relevant skills to excel in their careers.
+        </p>
+    </section>
+
+    <!-- Courses Offered -->
+    <section id="courses" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Our Courses</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>DevOps Training</h4>
+                        <p>Learn CI/CD, Docker, Kubernetes, and Terraform with hands-on labs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>AWS Cloud Certification</h4>
+                        <p>Master AWS Cloud and become a Certified Solutions Architect.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>Full Stack Development</h4>
+                        <p>Learn MERN Stack, React, and Node.js for web development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="container my-5">
+        <h2 class="text-center">Meet Our Expert Trainers</h2>
+        <p class="text-center">Our trainers have 10+ years of industry experience in top tech companies.</p>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container my-5">
+        <h2 class="text-center">Student Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p>⭐⭐⭐⭐⭐ "Great training! I got a DevOps job after this course."</p>
+                    <p><strong>- Rahul Sharma</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p>⭐⭐⭐⭐⭐ "In-depth knowledge and real-world projects. Highly recommended!"</p>
+                    <p><strong>- Priya Verma</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <p>⭐⭐⭐⭐⭐ "Best AWS training. I cleared my certification in one attempt."</p>
+                    <p><strong>- Ankit Kumar</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertisements Section -->
+    <section id="advertisements" class="container my-5">
+        <h2 class="text-center">Special Offers</h2>
+        <div class="advertisement">
+            <h3>🔥 50% Off on DevOps Training - Limited Time Offer!</h3>
+            <p>Enroll today and transform your career.</p>
+        </div>
+        <div class="advertisement">
+            <h3>🎓 100% Job Assistance for All Courses</h3>
+            <p>Our dedicated placement team helps you land your dream job.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2>Contact Us</h2>
+            <p>Email: info@abctraining.com | Phone: +91 98765 43210</p>
+            <p>Follow us on:
+                <a href="#" class="text-light">Facebook</a> |
+                <a href="#" class="text-light">LinkedIn</a> |
+                <a href="#" class="text-light">Twitter</a>
+            </p>
+            <a href="#courses" class="btn btn-primary mt-3">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>&copy; 2025 ABC Training Institute. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

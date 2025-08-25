@@ -1,0 +1,30 @@
+pipeline{
+    agent any
+    stages{
+        stage('Git Checkout'){
+            steps{
+               git branch: 'jenkins-branch', url: 'https://github.com/ManojKRISHNAPPA/test-1.git' 
+            }
+        }
+
+        stage('Build'){
+            steps{
+                echo 'Building the project...'
+            }
+        }
+
+        stage('Testing'){
+            steps{
+                echo 'Testing the project...'
+            }
+        }
+
+        stage('Deploying'){
+            step{
+               echo 'Deploying the project...'
+            }
+        }
+             
+   
+    }
+}       

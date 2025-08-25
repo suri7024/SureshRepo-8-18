@@ -20,8 +20,14 @@ pipeline{
         }
 
         stage('Deploying'){
-            step{
+            steps{
                echo 'Deploying the project...'
+            }
+        }
+
+        stage('completed'){
+            steps{
+               echo 'completed the project...'
             }
         }
              

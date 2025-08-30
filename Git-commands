@@ -1,0 +1,4 @@
+git clone --single-branch --branch <branch-name> https://github.com/<source-owner>/<repo-a>.git temp-repcd temp-repo
+git remote remove origin
+git remote add origin https://github.com/<dest-owner>/<repo-b>.git
+git push -u origin <branch-name>
